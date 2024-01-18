@@ -9,7 +9,7 @@ export type userDataType= {
 
 const baseUrl = import.meta.env.VITE_API_KEY
 const Register = async(userData:userDataType) => {
-   const response = await fetch (`${baseUrl}users/register`, {
+   const response = await fetch (`${baseUrl}/api/users/register`, {
     method:'POST',
     headers:{
         "Content-Type" : "application/json"

@@ -8,7 +8,7 @@ const baseUrl = import.meta.env.VITE_API_KEY
 
 export const HandleLogin = async (userData: userDataType) => {
     console.log(baseUrl)
-    const response = await fetch(`${baseUrl}users/login`, {
+    const response = await fetch(`${baseUrl}/api/users/login`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
